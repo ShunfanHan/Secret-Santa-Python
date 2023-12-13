@@ -56,7 +56,6 @@ participants_data = read_csv(csv_file_path)
 
 if isinstance(participants_data, pd.DataFrame):
     santa_pairs = assign_secret_santa(participants_data)
-    print(santa_pairs)
     send_emails(santa_pairs,participants_data)
 else:
     print(participants_data)
