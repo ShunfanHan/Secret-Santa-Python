@@ -27,8 +27,8 @@ def assign_secret_santa(participants):
     return santa_pairs
 
 def send_emails(santa_pairs, participants):
-    smtp_user = '2633291400@qq.com'
-    smtp_password = 'vdfzottyisevdjbh'
+    smtp_user = 'youneedtoputyouremailhere@qq.com'
+    smtp_password = 'you need to put your smtp password here(not your email password)'
 
     try:
         server = smtplib.SMTP_SSL('smtp.qq.com', 465)
